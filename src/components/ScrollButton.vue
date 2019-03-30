@@ -6,7 +6,7 @@
       id="arrow"
       ref="arrow"
       @click="clicked"
-      :style="{width:this.width*0.5+'px',height:this.height*0.5+'px',borderLeft:'gray 5px solid',borderTop:'gray 5px solid'}"
+      :style="{width:this.width*0.5+'px',height:this.height*0.5+'px'}"
     ></div>
   </div>
 </template>
@@ -40,5 +40,12 @@ export default {
 <style scoped>
 #arrow {
   cursor: pointer;
+  transition: all 0.5s;
+  border-left: gray 5px solid;
+  border-top: gray 5px solid;
+}
+#arrow:hover {
+  border-left-color: black;
+  border-top-color: black;
 }
 </style>
